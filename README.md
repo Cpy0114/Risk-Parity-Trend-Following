@@ -37,3 +37,6 @@ To mitigate tail risk, the strategy employs a trend filter (e.g., Simple Moving 
 ## Future Enhancements
 * Incorporate GARCH models for improved volatility forecasting
 * Apply Black-Litterman model for tactical asset allocation overlays
+
+## References
+* Bhansali, J. D., Chang, L., Holdom, J., Johnson, M., & Suvak, C. (2024). *Risk Parity with Trend-Following*. Long Tail Alpha, LLC. [Available at SSRN](https://ssrn.com/abstract=4714859)
