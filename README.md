@@ -32,7 +32,6 @@ To mitigate tail risk, the strategy employs a trend filter (e.g., Simple Moving 
     * `strategy_overlay.py`: Tactical trend-following signals and portfolio rebalancing logic.
 * `notebooks/`
     * `Research_Analysis.ipynb`: Full research pipeline including data ingestion, backtesting against Bhansali (2024) benchmarks, and performance visualization.
-* `data/`: (Optional) Directory for historical price data and factor files.
 
 ## Future Enhancements
 * Incorporate GARCH models for improved volatility forecasting
