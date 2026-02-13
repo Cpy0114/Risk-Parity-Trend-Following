@@ -27,9 +27,12 @@ To mitigate tail risk, the strategy employs a trend filter (e.g., Simple Moving 
 * **Dynamic Rebalancing**: Periodic weight adjustments based on rolling covariance matrices
 
 ## Project Structure
-* `notebooks/`: Detailed research, visualizations, and performance analysis
-* `src/`: Core Python scripts for optimization and backtesting
-* `data/`: Sample historical market data
+* `src/`
+    * `engine.py`: Core `RiskParityOptimizer` class for Equal Risk Contribution weight calculation.
+    * `strategy_overlay.py`: Tactical trend-following signals and portfolio rebalancing logic.
+* `notebooks/`
+    * `Research_Analysis.ipynb`: Full research pipeline including data ingestion, backtesting against Bhansali (2024) benchmarks, and performance visualization.
+* `data/`: (Optional) Directory for historical price data and factor files.
 
 ## Future Enhancements
 * Incorporate GARCH models for improved volatility forecasting
