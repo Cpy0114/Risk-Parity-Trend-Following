@@ -41,9 +41,17 @@ The implementation validates the core thesis of Bhansali et al. (2024) regarding
 * **Bond-Trend Substitution**: The study confirms that when bonds fail as a diversifier due to rising inflation/rates, trend-following signals serve as an effective alternative for downside protection
 * **Dynamic Rebalancing**: Regular tactical adjustments (e.g., 200-day SMA) significantly improved the Sharpe Ratio compared to static Equal Risk Contribution (ERC) strategies during volatile periods
 
-## Future Enhancements
-* Incorporate GARCH models for improved volatility forecasting
-* Apply Black-Litterman model for tactical asset allocation overlays
+## Limitations & Future Enhancements
+
+### Current Limitations
+* **Bull Market Lag**: During aggressive equity rallies, the strategy tends to underperform concentrated equity indices due to its risk-balancing nature and tactical de-risking
+* **Whipsaw Risk**: In sideways or high-volatility mean-reverting markets, trend-following signals may trigger frequent rebalancing, leading to higher transaction costs
+* **Lookback Sensitivity**: The efficacy of the trend filter is sensitive to the lookback period (e.g., 200-day SMA), which may act as a lagging indicator during V-shaped recoveries
+
+### Future Enhancements
+* **Advanced Volatility Modeling**: Incorporate **GARCH** models to replace simple rolling windows for more responsive and accurate volatility forecasting
+* **Refined Asset Allocation**: Apply the **Black-Litterman** model to combine market equilibrium with tactical trend-following views for more robust weight optimization
+* **Transaction Cost Analysis (TCA)**: Integrate a slippage and commission model to evaluate the net impact of tactical rebalancing in high-turnover environments
 
 ## References
 * Bhansali, J. D., Chang, L., Holdom, J., Johnson, M., & Suvak, C. (2024). *Risk Parity with Trend-Following*. Long Tail Alpha, LLC. [Available at SSRN](https://ssrn.com/abstract=4714859)
