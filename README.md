@@ -2,6 +2,9 @@
 
 This project implements a **Risk Parity (ERC - Equal Risk Contribution)** portfolio optimization strategy in Python. To address the vulnerability of Risk Parity during synchronized asset sell-offs, a **Trend-Following (Momentum)** filter is integrated to enhance drawdown control and risk-adjusted returns.
 
+## Research Context
+This project serves as an empirical extension and critical exploration of the foundational work on **Risk Parity** (e.g., Maillard, Roncalli, & Teiletche, 2010). While the original framework focuses on equalizing risk contributions, this implementation explores its robustness under regime shifts by integrating a momentum-based trend filter to address the "concentration of risk" during systemic market stress.
+
 ## Core Methodology
 
 ### 1. Risk Parity (Equal Risk Contribution)
