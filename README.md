@@ -33,6 +33,14 @@ To mitigate tail risk, the strategy employs a trend filter (e.g., Simple Moving 
 * `notebooks/`
     * `Research_Analysis.ipynb`: Full research pipeline including data ingestion, backtesting against Bhansali (2024) benchmarks, and performance visualization.
 
+## Empirical Results & Conclusions
+The implementation validates the core thesis of Bhansali et al. (2024) regarding the limitations of traditional Risk Parity in high-correlation regimes:
+
+* **Drawdown Mitigation**: During the 2022 market downturn, the Trend-Following filter successfully reduced maximum drawdown by tactically de-risking asset classes with negative price momentum
+* **Risk Un-clustering**: While traditional Risk Parity experienced "risk clustering" (all assets falling simultaneously), the tactical overlay helped maintain a more stable portfolio volatility profile
+* **Bond-Trend Substitution**: The study confirms that when bonds fail as a diversifier due to rising inflation/rates, trend-following signals serve as an effective alternative for downside protection
+* **Dynamic Rebalancing**: Regular tactical adjustments (e.g., 200-day SMA) significantly improved the Sharpe Ratio compared to static Equal Risk Contribution (ERC) strategies during volatile periods
+
 ## Future Enhancements
 * Incorporate GARCH models for improved volatility forecasting
 * Apply Black-Litterman model for tactical asset allocation overlays
