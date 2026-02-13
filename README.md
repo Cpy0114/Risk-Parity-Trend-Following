@@ -33,6 +33,11 @@ To mitigate tail risk, the strategy employs a trend filter (e.g., Simple Moving 
 * `notebooks/`
     * `Research_Analysis.ipynb`: Full research pipeline including data ingestion, backtesting against Bhansali (2024) benchmarks, and performance visualization.
 
+## Getting Started
+1. Clone the repository: `git clone https://github.com/Cpy0114/Risk-Parity-Trend-Following`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the analysis: Navigate to `notebooks/` and open `Research_Analysis.ipynb`
+
 ## Empirical Results & Conclusions
 The implementation validates the core thesis of Bhansali et al. (2024) regarding the limitations of traditional Risk Parity in high-correlation regimes:
 
@@ -55,3 +60,7 @@ The implementation validates the core thesis of Bhansali et al. (2024) regarding
 
 ## References
 * Bhansali, J. D., Chang, L., Holdom, J., Johnson, M., & Suvak, C. (2024). *Risk Parity with Trend-Following*. Long Tail Alpha, LLC. [Available at SSRN](https://ssrn.com/abstract=4714859)
+
+---
+## Explore More
+This project is part of my [Market-Risk-Quant-Portfolio](https://github.com/Cpy0114/Market-Risk-Quant-Portfolio). Feel free to explore other risk management and quantitative analysis projects there.
